@@ -21,16 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sT7-I3-5Jk">
-                                <rect key="frame" x="139" y="0.0" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wlm-fi-Awu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wlm-fi-Awu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ih6-Aw-l32"/>
+                            <constraint firstAttribute="trailing" secondItem="wlm-fi-Awu" secondAttribute="trailing" id="lwS-T2-bTd"/>
+                            <constraint firstItem="wlm-fi-Awu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sMG-h3-IuX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wlm-fi-Awu" secondAttribute="bottom" id="u1R-Hp-o9e"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dertableview" destination="wlm-fi-Awu" id="s6m-pu-aNA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
